@@ -1,0 +1,22 @@
+Create a multi pod with 3 containers
+
+Name: container-1
+image: nginx
+
+Name: container-2
+image: redis
+
+Name: container-3
+image: alpine
+
+###
+Answer
+###
+```
+kubectl run multipod --image=nginx --dry-run=client -o yaml > ans_9
+3.yaml
+vim ans_93.yaml
+
+```
+
+Ref: https://kubernetes.io/docs/concepts/workloads/pods/#how-pods-manage-multiple-containers
