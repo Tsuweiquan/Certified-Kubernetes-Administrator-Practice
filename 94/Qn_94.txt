@@ -1,0 +1,9 @@
+Question 94:
+
+Replace the "grey" pod with the existing yaml file "pod-replace.yaml" and verify after
+
+Original grey pod with nginx:1.15
+
+replace grey pod with another yaml file with a different nginx version
+
+# Ref https://kubernetes.io/docs/reference/kubectl/generated/kubectl_replace/
