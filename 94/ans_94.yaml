@@ -3,7 +3,10 @@ kubectl get pods -n practice
 
 kubectl describe pod grey
 
-# https://kubernetes.io/docs/reference/kubectl/generated/kubectl_replace/
+# Ref https://kubernetes.io/docs/reference/kubectl/generated/kubectl_replace/
 kubectl replace -f pod-replace.yaml --force
 pod "grey" deleted
 pod/grey replaced
+
+kubectl get pods
+kubectl describe pod grey
