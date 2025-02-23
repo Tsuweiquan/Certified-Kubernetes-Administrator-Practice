@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: front-replicaset
+  labels:
+    app: front-replicaset
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      app: front-replicaset
+  template:
+    metadata:
+      labels:
+        app: front-replicaset
+    spec:
+      containers:
+      - name: front-replicaset
+        image: nginx
+

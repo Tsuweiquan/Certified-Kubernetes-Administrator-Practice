@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  creationTimestamp: null
+  labels:
+    app: front-replicaset
+  name: front-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: front-replicaset
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: front-replicaset
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
