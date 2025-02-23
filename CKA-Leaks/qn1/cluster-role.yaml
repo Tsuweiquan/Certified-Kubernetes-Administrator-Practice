@@ -1,0 +1,10 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  # "namespace" omitted since ClusterRoles are not namespaced
+  name: deployment-clusterrole
+rules:
+- apiGroups: [""]
+  resources: ["deployments", "daemonsets", "statefulsets"]
+  verbs: ["create"]
+
